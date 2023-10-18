@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-image: url('back.jpeg') !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background-color: rgba(155, 155, 156, 0.473);
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.personajes {
+  text-align: center;
+  margin:  auto;
+  max-width: 800px;
+  margin-top: 25vh; /* Corregido a "25vh" */
+}
+
+.Link1, .bokoblin, .zelda {
+  background-color: rgba(155, 155, 156, 0.473);
+  border-radius: 10px;
+  height: 40vh;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  float: left;
+}
+
+.nombre {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.imagen_link {
+  width: 100%;
+
+}
+
+.footer {
+  background-color: rgba(92, 90, 90, 0.26);
+  font-size: 2vh;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  line-height: 5vh;
+}

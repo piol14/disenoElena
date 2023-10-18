@@ -1,0 +1,35 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(10, 80px);
+    grid-template-rows: repeat(8,70px);
+    height: 800px;
+        
+  
+}
+
+.caja {
+
+   
+}
+
+.amarilla {
+  
+    grid-column: 1/11;
+    grid-row: 1/7;
+    background-color: yellow;
+
+}
+
+.verde {
+    grid-column:2/11;
+    grid-row: 1/4;
+    background-color: green;
+}
+.roja
+{
+    background-color: red;
+    grid-column: 1/11;
+    grid-row: 7/9;
+}
+
+
