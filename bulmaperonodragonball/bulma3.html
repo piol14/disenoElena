@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" >
+            <img src="soybatman.png" width="78" height="100">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample " class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://es.wikipedia.org/wiki/Anexo:Personajes_de_DC_Comics " target="_blank">
+                Personajes
+            </a>
+            <a class="navbar-item" href="https://es.wikipedia.org/wiki/Universo_extendido_de_DC " target="_blank">
+                Películas
+            </a>
+            <a class="navbar-item" href="https://es.wikipedia.org/wiki/Anexo:Elenco_del_Universo_extendido_de_DC" target="_blank">
+                Actores
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Más
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://es.wikipedia.org/wiki/Ryan_Gosling" target="_blank">
+                        Sobre mí
+                    </a>
+                    <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        Contacto
+                    </a>
+                    <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        Mi tío
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        Reportar algún error
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+           
+        </div>
+    </div>
+</nav>
+
+<script> //script para los spans
+  document.addEventListener('DOMContentLoaded', () => {
+
+    
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    
+    if ($navbarBurgers.length > 0) {
+
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+        
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
